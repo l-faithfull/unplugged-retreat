@@ -93,7 +93,9 @@ textarea {
   margin: 50px 0;
 }
 
-/* ======= HEADER - FOOTER BASE STYLES ====== */
+/* =======================================
+  HEADER - FOOTER BASE STYLES
+========================================== */
 header,
 footer {
   display: flex;
@@ -121,18 +123,18 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
-  height: 1px;
-  margin: 10px 0 20px 0;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
-  width: 44%;
+  width: 100%;
 }
 
 .header-divider {
   width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 /*---- Footer ---- */
@@ -169,7 +171,9 @@ footer .copyright {
   margin: 20px 0;
 }
 
-/* ====== MOBILE- HOMEPAGE ===== */
+/* ==========================================
+  MOBILE- HOMEPAGE 
+============================================= */
 
 /* -- Hero -- */
 .hero-area {
@@ -218,7 +222,6 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -227,12 +230,14 @@ aside {
 }
 
 .reviews h3 {
-  width: 48%;
+  width: 55%;
   margin: 20px 0;
 }
 
 
-/* ====== ABOUT PAGE ===== */
+/* ===================================
+  ABOUT PAGE 
+====================================== */
 .mission {
   display: flex;
   justify-content: center;
@@ -247,8 +252,14 @@ aside {
   flex-flow: row wrap;
 }
 
+.contact-content p {
+  margin: 0;
+}
 
-/* ====== FAQ PAGE ====== */
+
+/* ================================= 
+  FAQ PAGE 
+==================================== */
 .faq {
   display: flex;
   justify-content: center;
@@ -257,13 +268,20 @@ aside {
 }
 
 .faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
+.faq h2 {
+  margin-bottom: 40px;
+}
 
+.faq-content {
+  margin-bottom: 50px;
+}
 
 
 /* ==========================================================================
@@ -358,7 +376,7 @@ aside {
   /*----- General styles -------*/
   .content-wrapper {
     max-width: 640px;
-    margin: 100px;
+    margin: 100px 0;
   }
 
   /*----------- Header ----------*/
@@ -434,7 +452,7 @@ aside {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
   }
 
   /* ------ Reviews -------- */
@@ -450,6 +468,7 @@ aside {
   /* ================================================
     ABOUT PAGE 
   =================================================== */
+  
   /* ---- Mission ----- */
   .mission-content {
     display: flex;
@@ -476,12 +495,16 @@ aside {
   /* ================================================
     FAQ PAGE 
   ==================================================== */
+  header {
+    padding: 15px 0;
+  }
+
   .faq .content-wrapper {
     justify-content: space-between;
   }
 
   .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
   }
 
   .faq h2 {
@@ -490,8 +513,63 @@ aside {
 
 } /* tablet media query ends */
 
-@media only screen and (min-width: 1200px) {
-  /* Desktop styles here */
+
+@media only screen and (min-width: 1200px) { /* Desktop styles here */
+  .content-wrapper {
+    max-width: 960px;
+  }  
+
+  /* ==========================================
+    HOMEPAGE 
+  ============================================= */
+
+  /* Hero */
+  .hero-area h1 {
+    width: 60%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
+
+  /* ======================================
+    ABOUT PAGE
+  ========================================= */
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  /* =======================================
+    FAQ PAGE
+  ========================================== */
+
+  .faq h2 {
+    width: 100%;
+  }
+
 } /* desktop media query ends */
 
 
