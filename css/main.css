@@ -87,7 +87,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* ======== BASE STYLES ===== */
+/* =================================
+ BASE STYLES 
+==================================== */
 html {
 	font-size: 16px;
 }
@@ -125,7 +127,7 @@ h4 {
  
 p {
   font-size: 0.875em;
-  line-height: 1.125;
+  line-height: 1.285;
 }
  
 img {
@@ -146,7 +148,7 @@ address {
 }
 
 /* =======================================
-  HEADER - FOOTER BASE STYLES
+  HEADER - FOOTER  MOBILE
 ========================================== */
 header,
 footer {
@@ -178,6 +180,13 @@ header figure {
   flex-flow: row wrap;
 }
 
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0;
+  background-color: #3a3a3a;
+}
+
 header nav {
   display: flex;
   justify-content: space-around;
@@ -194,17 +203,12 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
   font-size: 1.125em;
-}
-
-.header-divider {
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
-  background-color: #3a3a3a;
 }
 
 /*---- Footer ---- */
@@ -259,7 +263,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #222;
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #222;
   background-size: cover;
   min-height: 500px;
 }
@@ -269,6 +273,7 @@ footer .copyright {
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500; 
   line-height: 1.2; 
+  margin: 0;
 }
 
 /* -- Aside -- */
@@ -278,6 +283,10 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   background-color: #527158;
+}
+
+aside .form-description h3 {
+  margin-top: 0;
 }
 
 aside .form {
@@ -312,7 +321,7 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #222;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #222;
   background-size: cover;
 }
 
@@ -527,7 +536,9 @@ input[type=button] {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {  /* Tablet styles here */
-  /*----- General styles -------*/
+  /*=================================
+   General styles - Tablet
+  ===================================*/
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
@@ -543,7 +554,9 @@ input[type=button] {
       line-height: 1.25;
   }
 
-  /*----------- Header - Tablet ----------*/
+  /*=======================
+   Header Tablet 
+  =========================*/
   header {
     justify-content: space-around;
     padding: 33px 0;
@@ -570,7 +583,9 @@ input[type=button] {
     display: none;
   }
 
-  /* ------ Footer - Tablet ------- */
+  /*=======================
+   Footer - Tablet 
+  =========================*/
   footer .content-wrapper {
     width: 65%;
     margin: 100px 0;
@@ -580,6 +595,7 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
@@ -610,6 +626,15 @@ input[type=button] {
    ======================================================== */
 
   /*-------- Hero area -------*/
+  .hero-area {
+    min-height: 600px;
+  }
+  
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /* ------ Aside ----------- */
   aside .content-wrapper {
@@ -625,6 +650,10 @@ input[type=button] {
     margin: 0;
   }
 
+  aside .form h3 {
+    margin-top: 0;
+  }
+
   /* ------ Features -------- */
   .features article {
     display: flex;
@@ -638,18 +667,32 @@ input[type=button] {
     width: 62%;
   }
 
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /* ------ Reviews -------- */
   .reviews article {
     display: flex;
     justify-content: space-between;
   }
 
-  .reviews article div {
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article div,
+  .reviews figure {
     width: 49%;
   }
 
-  .reviews figure {
-    width: 50%;
+  .reviews article h3 {
+    margin-top: 0;
+    width: 75%;
   }
 
   /* ================================================
@@ -717,7 +760,9 @@ input[type=button] {
 
 
 @media only screen and (min-width: 1200px) { /* Desktop styles here */
-  /* General styles */
+  /* =========================
+   General styles - Desktop 
+  ============================*/
   .content-wrapper {
     max-width: 960px;
   }  
@@ -738,10 +783,6 @@ input[type=button] {
   p {
       font-size: 1.125em;
       line-height: 1.333;
-  }
-
-  footer h4 {
-    font-size: 1.875em;
   }
 
   /* ==========================================
