@@ -243,7 +243,7 @@ footer .copyright {
 }
 
 /* ==========================================
-  MOBILE- HOMEPAGE 
+  HOMEPAGE - MOBILE
 ============================================= */
 
 /* -- Hero -- */
@@ -326,6 +326,12 @@ input[type=button] {
 
 .features p {
   margin: 0;
+  text-align: center;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 /* -- reviews -- */
@@ -348,7 +354,7 @@ input[type=button] {
 
 
 /* ===================================
-  ABOUT PAGE 
+  ABOUT PAGE - MOBILE
 ====================================== */
 
 /* Mission */
@@ -392,7 +398,7 @@ input[type=button] {
 
 
 /* ================================= 
-  FAQ PAGE 
+  FAQ PAGE - MOBILE
 ==================================== */
 .faq {
   display: flex;
