@@ -285,10 +285,6 @@ aside {
   background-color: #527158;
 }
 
-aside .form-description h3 {
-  margin-top: 0;
-}
-
 aside .form {
   margin-top: 30px;
 }
@@ -648,10 +644,6 @@ input[type=button] {
   aside .content-wrapper .form {
     width: 40%;
     margin: 0;
-  }
-
-  aside .form h3 {
-    margin-top: 0;
   }
 
   /* ------ Features -------- */
